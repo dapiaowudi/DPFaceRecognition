@@ -16,6 +16,8 @@
 		277D41E31CF2DDFF00FFC9B5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 277D41E11CF2DDFF00FFC9B5 /* LaunchScreen.storyboard */; };
 		277D41EE1CF2DDFF00FFC9B5 /* DPFaceRecongnitionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 277D41ED1CF2DDFF00FFC9B5 /* DPFaceRecongnitionTests.m */; };
 		277D41F91CF2DDFF00FFC9B5 /* DPFaceRecongnitionUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 277D41F81CF2DDFF00FFC9B5 /* DPFaceRecongnitionUITests.m */; };
+		277D42081CF2DE2D00FFC9B5 /* DPCameraPreview.m in Sources */ = {isa = PBXBuildFile; fileRef = 277D42071CF2DE2D00FFC9B5 /* DPCameraPreview.m */; };
+		277D420B1CF2DEE600FFC9B5 /* DPCamera.m in Sources */ = {isa = PBXBuildFile; fileRef = 277D420A1CF2DEE600FFC9B5 /* DPCamera.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,10 @@
 		277D41F41CF2DDFF00FFC9B5 /* DPFaceRecongnitionUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DPFaceRecongnitionUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		277D41F81CF2DDFF00FFC9B5 /* DPFaceRecongnitionUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DPFaceRecongnitionUITests.m; sourceTree = "<group>"; };
 		277D41FA1CF2DDFF00FFC9B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		277D42061CF2DE2D00FFC9B5 /* DPCameraPreview.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPCameraPreview.h; sourceTree = "<group>"; };
+		277D42071CF2DE2D00FFC9B5 /* DPCameraPreview.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPCameraPreview.m; sourceTree = "<group>"; };
+		277D42091CF2DEE600FFC9B5 /* DPCamera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPCamera.h; sourceTree = "<group>"; };
+		277D420A1CF2DEE600FFC9B5 /* DPCamera.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPCamera.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +113,10 @@
 				277D41D41CF2DDFF00FFC9B5 /* AppDelegate.m */,
 				277D41D61CF2DDFF00FFC9B5 /* ViewController.h */,
 				277D41D71CF2DDFF00FFC9B5 /* ViewController.m */,
+				277D42061CF2DE2D00FFC9B5 /* DPCameraPreview.h */,
+				277D42071CF2DE2D00FFC9B5 /* DPCameraPreview.m */,
+				277D42091CF2DEE600FFC9B5 /* DPCamera.h */,
+				277D420A1CF2DEE600FFC9B5 /* DPCamera.m */,
 				277D41D91CF2DDFF00FFC9B5 /* Main.storyboard */,
 				277D41DF1CF2DDFF00FFC9B5 /* Assets.xcassets */,
 				277D41E11CF2DDFF00FFC9B5 /* LaunchScreen.storyboard */,
@@ -205,6 +215,7 @@
 		277D41C51CF2DDFF00FFC9B5 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = DP;
 				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = dapiao;
 				TargetAttributes = {
@@ -274,6 +285,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				277D41D81CF2DDFF00FFC9B5 /* ViewController.m in Sources */,
+				277D42081CF2DE2D00FFC9B5 /* DPCameraPreview.m in Sources */,
+				277D420B1CF2DEE600FFC9B5 /* DPCamera.m in Sources */,
 				277D41DE1CF2DDFF00FFC9B5 /* DPFaceRecongnition.xcdatamodeld in Sources */,
 				277D41D51CF2DDFF00FFC9B5 /* AppDelegate.m in Sources */,
 				277D41D21CF2DDFF00FFC9B5 /* main.m in Sources */,
@@ -418,6 +431,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = DPFaceRecongnition/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.dapiao.DPFaceRecongnition;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -429,6 +443,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = DPFaceRecongnition/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.dapiao.DPFaceRecongnition;
 				PRODUCT_NAME = "$(TARGET_NAME)";

@@ -7,8 +7,12 @@
 //
 
 #import "ViewController.h"
-
+#import "DPCamera.h"
+#import "DPCameraPreview.h"
 @interface ViewController ()
+
+@property (nonatomic, strong) DPCamera *camera;
+@property (nonatomic, strong) DPCameraPreview *previewView;
 
 @end
 
@@ -16,7 +20,12 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    self.camera = [[DPCamera alloc] initCamera];
+    self.previewView = [[DPCameraPreview alloc]initWithFrame:self.view.bounds];
+    [self.previewView setSession:self.camera.captureSession];
+    self.camera.faceDetectionDelegate = self.previewView;
+    [self.view addSubview:self.previewView];
+    [self.camera startSession];
 }
 
 - (void)didReceiveMemoryWarning {
