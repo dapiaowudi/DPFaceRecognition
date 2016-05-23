@@ -26,6 +26,18 @@
     self.camera.faceDetectionDelegate = self.previewView;
     [self.view addSubview:self.previewView];
     [self.camera startSession];
+    
+    UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
+    btn.frame = CGRectMake(0, 0, 65, 50);
+    btn.center = CGPointMake(self.view.center.x, self.view.bounds.size.height-50);
+    [btn setImage:[UIImage imageNamed:@"big_camera_icon"] forState:UIControlStateNormal];
+    [btn addTarget:self action:@selector(switchCameras) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:btn];
+}
+
+- (void)switchCameras
+{
+    [self.camera switchCameras];
 }
 
 - (void)didReceiveMemoryWarning {

@@ -18,6 +18,7 @@
 		277D41F91CF2DDFF00FFC9B5 /* DPFaceRecongnitionUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 277D41F81CF2DDFF00FFC9B5 /* DPFaceRecongnitionUITests.m */; };
 		277D42081CF2DE2D00FFC9B5 /* DPCameraPreview.m in Sources */ = {isa = PBXBuildFile; fileRef = 277D42071CF2DE2D00FFC9B5 /* DPCameraPreview.m */; };
 		277D420B1CF2DEE600FFC9B5 /* DPCamera.m in Sources */ = {isa = PBXBuildFile; fileRef = 277D420A1CF2DEE600FFC9B5 /* DPCamera.m */; };
+		277D420D1CF2E9DC00FFC9B5 /* big_camera_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 277D420C1CF2E9DC00FFC9B5 /* big_camera_icon@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,7 @@
 		277D42071CF2DE2D00FFC9B5 /* DPCameraPreview.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPCameraPreview.m; sourceTree = "<group>"; };
 		277D42091CF2DEE600FFC9B5 /* DPCamera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPCamera.h; sourceTree = "<group>"; };
 		277D420A1CF2DEE600FFC9B5 /* DPCamera.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPCamera.m; sourceTree = "<group>"; };
+		277D420C1CF2E9DC00FFC9B5 /* big_camera_icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "big_camera_icon@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +111,7 @@
 		277D41CF1CF2DDFF00FFC9B5 /* DPFaceRecongnition */ = {
 			isa = PBXGroup;
 			children = (
+				277D420C1CF2E9DC00FFC9B5 /* big_camera_icon@2x.png */,
 				277D41D31CF2DDFF00FFC9B5 /* AppDelegate.h */,
 				277D41D41CF2DDFF00FFC9B5 /* AppDelegate.m */,
 				277D41D61CF2DDFF00FFC9B5 /* ViewController.h */,
@@ -258,6 +261,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				277D41E31CF2DDFF00FFC9B5 /* LaunchScreen.storyboard in Resources */,
+				277D420D1CF2E9DC00FFC9B5 /* big_camera_icon@2x.png in Resources */,
 				277D41E01CF2DDFF00FFC9B5 /* Assets.xcassets in Resources */,
 				277D41DB1CF2DDFF00FFC9B5 /* Main.storyboard in Resources */,
 			);

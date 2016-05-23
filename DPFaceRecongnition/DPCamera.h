@@ -21,4 +21,5 @@
 
 - (id)initCamera;
 - (void)startSession;
+- (BOOL)switchCameras;
 @end
